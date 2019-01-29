@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "— 活动列表 —",
+  "component": true,
+  "usingComponents": {
+    "allRead": "../allRead/allRead",
+    "allClass": "../allClass/allClass",
+    "allTeacher": "../allTeacher/allTeacher"
+  }
+}

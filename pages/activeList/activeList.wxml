@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class='tab-wrapper'>
+    <view id='tabRead' class='tab-read {{currentTab === 0 ? "tab-active":""}}' bindtap='switchTab'>共读</view>
+    <view id='tabClass' class='tab-class {{currentTab === 1 ? "tab-active" : ""}}' bindtap='switchTab'>班级</view>
+    <view id='tabTeacher' class='tab-teacher {{currentTab === 2 ? "tab-active" : ""}}' bindtap='switchTab'>导师</view>
+  </view>
+
+  <view class='content-wrapper' wx:if='{{currentTab === 0}}'><allRead/></view>
+  <view class='content-wrapper' wx:if='{{currentTab === 1}}'><allClass/></view>
+  <view class='content-wrapper' wx:if='{{currentTab === 2}}'><allTeacher/></view>
+
+</view>
