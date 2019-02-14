@@ -46,22 +46,25 @@
   display: flex;
   flex-direction: column;
 }
+
 .con-i-items {
   width: 100%;
   height: 120px;
   position: relative;
   border-bottom: 1px solid #d5d5d5;
 }
+
 .conetent-item {
   width: 90%;
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
+
 .content-img {
   height: 100px;
   float: left;
-  width: 30%;
+  width: 38%;
   margin: 10px auto;
   position: relative;
 }
@@ -76,45 +79,24 @@
 .c-img-i {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
 }
+
+.content-info {
+  float: right;
+  position: relative;
+  height: 100%;
+  width: 61%;
+  /* font-family: 'webfont' !important; */
+}
+
 .content-n {
-  width: 100%;
   font-size: 26rpx;
-  /* padding: 8px 8px; */
+  padding: 8px 8px;
   color: #121212;
   letter-spacing: 2rpx；;
 }
-.content-c{
-  color:#d2d2d2;
-    float: left;
-  font-size: 26rpx;  
-}
 
-.content-t1 {
-  float: left;
-  font-size: 26rpx;
-  color: #121212;
-  width:25%;
-}
-.content-t2 {
-  float: left;
-  font-size: 26rpx;
-  color:#d2d2d2;
-  width:70%;
-}
-.content-t3 {
-  float: left;
-  font-size: 26rpx;
-  color:#d2d2d2;
-}
 
-.content-n-t {
-  font-size: 24rpx;
-  color: #d2d2d2;
-  /* padding: 0px 8px; */
-  float:left;
-}
 
 .content-n-d {
   font-size: 26rpx;
@@ -135,4 +117,33 @@
   position: relative;
   float: right;
   bottom: -7.5%;
+}
+
+/*******2019-02-14 wqx 增加样式************/
+
+.content-t1 {
+  float: left;
+  width: 23%;
+}
+
+.content-t2 {
+  margin-left: 27%;
+  font-size: 24rpx;
+  color: #d2d2d2;
+}
+
+.content-c {
+  font-size: 24rpx;
+  color: #d2d2d2;
+  float: left;
+  position: relative;
+  padding:8px 8px 8px 8px;
+
+}
+.content-n-t {
+  float: left;
+  font-size: 24rpx;
+  color: #d2d2d2; 
+  position:relative;
+
 }

@@ -1,2 +1,7 @@
-<!--pages/allClass/allClass.wxml-->
-<text>pages/allClass/allClass.wxml</text>
+<view class="container">
+  <view class='content'>
+    <view wx:for-items="{{dataList}}" class='con-i-items'>
+      {{item}}
+    </view>
+  </view>
+</view>

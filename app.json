@@ -1,5 +1,6 @@
 {
   "pages": [
+   
     "pages/newList/newList",
     "pages/activeList/activeList",
     "pages/userCenter/userCenter",
@@ -7,7 +8,7 @@
     "pages/allClass/allClass",
     "pages/allTeacher/allTeacher",
     "pages/index/index",
-    "pages/activeDetail/activeDetail",
+    "pages/activeDetail/activeDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

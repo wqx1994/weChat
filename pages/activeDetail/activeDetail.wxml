@@ -31,8 +31,7 @@
             <view class='content-info'>
               <view class='content-n'>
                 <view class='content-t1'>{{item.activeName}}</view>
-                <view class='content-t2'>{{item.activeTime}} </view>
-                 <view class='content-t3'>> </view>
+                <view class='content-t2'>{{item.activeTime}}> </view>                 
               </view>              
               <view class='content-c'>
               {{item.activeClass}}
