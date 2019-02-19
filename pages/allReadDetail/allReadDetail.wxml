@@ -1,0 +1,50 @@
+<view>
+  <view class='head'>
+    <view>
+      <image class='head-img-i' src="../../img/gt21.png"></image>
+    </view>
+    <view style='height:35%;'>
+      <view class='head-img'>
+        <image class='c-img-t' src="../../img/2.png"></image>
+      </view>
+      <view class='head-msg'>
+        <view>报名时间:2019.01.02 - 2019.02.09</view>
+        <view>适合班级</view>
+        <view>简介:开奖号水电费看见爱上奋达科技暗红色的发生的金凤凰和红烧豆腐就按客户说的减肥啊积分换卡惊世毒妃阿奥斯卡就发货撒地方阿基双方都发可接受....
+        </view>
+
+      </view>
+    </view>
+    <view class="btn-area">
+      <button class='head-button' data-id="1" type="primary" size="mini" bindtap="myJoin" hover-class="other-button-hover">
+        我要参加
+      </button>
+      <button style='margin-left:2%;' class='head-button' type="default" size="mini" plain="false" disabled="false" bindtap="default" hover-class="other-button-hover">
+        我要分享
+      </button>
+    </view>
+  </view>
+  <view class='content'>
+    <scroll-view class='content-l'>
+      <block wx:for-items="{{dataList}}">
+        <view class='con-i-items'>
+          <view class='conetent-item' data-id="{{item.activeId}}" data-role="{{item.roleType}}" data-img="{{item.activeBanner}}" catchtap='detailClick'>
+            <view class='content-img'>
+              <image class='c-img-i' src="{{item.activeBanner}}"></image>
+            </view>
+            <view class='content-info'>
+              <view class='content-n'>
+                <view class='content-t1'>{{item.activeName}}</view>
+                <view class='content-t2'>{{item.activeTime}}> </view>
+              </view>
+              <view class='content-c'>
+                {{item.activeClass}}
+              </view>
+              <view class='content-n-t'>{{item.activeTheme}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

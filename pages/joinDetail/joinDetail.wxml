@@ -1,0 +1,21 @@
+<view class='content'>
+  <view class='content-c'>班级选择</view>
+  <view class='content-c'>如果找不到您的班级，请先到个人中心维护您的班级和个人信息</view>
+  <view class='content-c'>
+    <radio-group class="radio-group" bindchange="radioChange">
+
+      <view class="radio radio-c" wx:for="{{items}}">
+        <radio value="{{item.id}}" size="mini" checked="{{item.checked}}" /> {{item.value}}
+      </view>
+    </radio-group>
+
+  </view>
+  <view class='content'>
+  
+    <view class='view-button'>
+      <button class='button-1' data-id='1' type="primary"  bindtap="btnJoin" hover-class="other-button-hover">
+        报名/参加
+      </button>
+    </view>
+  </view>
+</view>

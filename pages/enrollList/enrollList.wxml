@@ -1,0 +1,12 @@
+  <view class='content'>
+    <view class='view-button'>
+      <button class='head-button-1' data-id="1" type="primary"   bindtap="btnEnroll" hover-class="other-button-hover">
+        我以导师／老师身份，我要报名
+      </button>
+    </view>
+    <view class='view-button'>
+      <button class='head-button-2' type="default"  bindtap="default" hover-class="other-button-hover">
+        我以学生／家长身份，我要参加
+      </button>
+    </view>
+  </view>

@@ -1,14 +1,19 @@
 {
   "pages": [
-   
-    "pages/newList/newList",
+     
     "pages/activeList/activeList",
+  "pages/studentEnroll/studentEnroll",
+    "pages/joinDetail/joinDetail",
+    "pages/enrollList/enrollList",
+    "pages/activeDetail/activeDetail",
+    "pages/allReadDetail/allReadDetail",
+    "pages/newList/newList",
     "pages/userCenter/userCenter",
     "pages/allRead/allRead",
     "pages/allClass/allClass",
     "pages/allTeacher/allTeacher",
-    "pages/index/index",
-    "pages/activeDetail/activeDetail"
+    "pages/joinSuccess/joinSuccess",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

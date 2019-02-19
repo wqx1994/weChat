@@ -5,7 +5,7 @@
         <view class='con-i-items'>
           <view class='conetent-item' data-id="{{item.activeId}}" data-role="{{item.roleType}}" data-img="{{item.activeBanner}}" catchtap='detailClick'>
             <view class='content-img'>
-              <image class='c-img-i' src="{{item.activeBanner}}"></image>
+              <image class='c-img-i' data-id='{{item.activeId}}' src="{{item.activeBanner}}"></image>
             </view>
             <view class='content-info'>
               <view class='content-n'>

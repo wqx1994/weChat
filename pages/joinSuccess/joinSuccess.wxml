@@ -1,0 +1,18 @@
+<!--pages/joinSuccess/joinSuccess.wxml-->
+<view class='content'>
+  <view class='title'>
+  <image class='title-img' src='../../img/smile.png'></image>
+  <text style='margin-left:3%;'>成功报名/参加</text>
+
+  </view>
+  <view class=' content-n'>
+    <view>北京市 海淀区 第四小学 二年级</view>
+    <view>《第17期 xxx》 活动</view>
+  </view>
+  
+</view>
+  <view class='view-button'>
+      <button class='button-1' data-id='1' type="primary"  bindtap="btnGoBack" hover-class="other-button-hover">
+       回到活动页
+      </button>
+    </view>  

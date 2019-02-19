@@ -1,0 +1,24 @@
+/* pages/enrollList/enrollList.wxss */
+
+.head-button-1 {
+  /* background: #3385ff !important;
+  color: #fff !important; */
+  width: 80%;
+}
+.head-button-2 {
+  background: #33FF85 !important;
+  color: #fff !important;
+  width: 80%;
+}
+
+.view-button {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  margin-top: 20px;
+  line-height:3;
+}

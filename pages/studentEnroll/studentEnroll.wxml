@@ -1,0 +1,111 @@
+<!--index.wxml-->
+<view class="error-banner" animation="{{animationData}}">
+  <label class="error-label">{{errorMessage}}</label>
+</view>
+<view class="main">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="info-area">
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title" style="display: flex;flex-direction:row;">省/市：</label>
+          </view>
+          <view class="flex-item">
+            <!-- <input class="input" name="input_name" type="text" auto-focus required confirm-type="done" /> -->
+            <input class="input" name="input_provice" type="text" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">市：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_city" type="text" focus   confirm-type="done" />
+          </view>
+        </view>
+      </view>
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">区/县：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_area" type="text" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">学校名称：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_school" type="text" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">姓名：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_name" type="text" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">年龄：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_age" type="number" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">性别：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_sex" type="text" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">手机：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_phone" type="number" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+      <view class="section">
+        <view class="flex-wrp" style="display: flex;flex-direction:row;">
+          <view class="flex-item">
+            <label class="info-title">邮箱：</label>
+          </view>
+          <view class="flex-item">
+            <input class="input" name="input_email" type="text" focus  confirm-type="done" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='main-n'>
+      如果找不到你的班级请通知你老师创建班级
+    </view>
+    <view class="btn-area flex-wrp">
+      <button class="button" formType="submit" type="primary">提交</button>
+      <button class="button reset" formType="reset">重置</button>
+    </view>
+
+  </form>
+</view>

@@ -1,7 +1,13 @@
-<view class="container">
-  <view class='content'>
-    <view wx:for-items="{{dataList}}" class='con-i-items'>
-      {{item}}
-    </view>
+<!--index.wxml-->
+<view class="container flex-wrap flex-direction-col">
+    <!-- 分类导航 -->
+  <view class="nav-block wrap">
+    <block wx:for="{{navItems}}"> 
+      <view class="wrap-item {{item.isSplot ? 'exp' : ''}}">        
+        <navigator url="/../img/001.png" hover-class="navigator-hover">    
+        {{item.name}}</navigator>
+      </view>
+    </block>
   </view>
+
 </view>

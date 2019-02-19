@@ -5,7 +5,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dataList: [{
+      activeName: "第17期",
+      activeTheme: "钢铁是怎样练成的【正在报名中...】",
+      activeBanner: '../../img/b1.png',
+      activeTime: '2019.01.05-2019.01.06',
+      activeId: '1',
+      activeClass: "一年级、二年级  "
+    }, {
+      activeName: "第17期",
+      activeTheme: "钢铁是怎样练成的【正在报名中...】",
+      activeBanner: '../../img/b1.png',
+      activeTime: '2019.01.05-2019.01.06',
+      activeId: '2',
+      activeClass: "一年级、二年级"
+    }, {
+      activeName: "第17期",
+      activeTheme: "钢铁是怎样练成的【正在报名中...】",
+      activeBanner: '../../img/b1.png',
+      activeTime: '2019.01.05-2019.01.06',
+      activeId: '3',
+      activeClass: "一年级、二年级"
+    }]
+    // }, {
+    //   activeName: "第17期",
+    //   activeTheme: "钢铁是怎样练成的【正在报名中...】",
+    //   activeBanner: '/../img/b1.png',
+    //   activeTime: '2019.01.05-2019.01.06',
+    //   activeId: '4',
+    //   activeClass: "一年级、二年级"
+    // }, {
+    //   activeName: "第17期",
+    //   activeTheme: "钢铁是怎样练成的【正在报名中...】",
+    //   activeBanner: '/../img/b1.png',
+    //   activeTime: '2019.01.05-2019.01.06',
+    //   activeId: '5',
+    //   activeClass: "一年级、二年级"
+    // }], //所有数据
   },
 
   /**
