@@ -2,10 +2,18 @@
 .content-c {
   width:100%;
   font-size: 24rpx;
-  color: #d2d2d2;
   float: left;
   position: relative;
   padding:8px 8px 8px 8px;
+
+}
+.content-n {
+  width:100%;
+  font-size: 24rpx;
+  float: left;
+  position: relative;
+  padding:8px 8px 8px 8px;
+  line-height: 3;
 
 }
 .radio-c{

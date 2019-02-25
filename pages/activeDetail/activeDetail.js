@@ -6,6 +6,11 @@ Page({
    */
 
   data: {
+    activeDetail: {
+      enrollTime: "2019.01.02 - 2019.02.09",
+      className: "一年级、二年级",
+      introduce: "开奖号水电费看见爱上奋达科技暗红色的发生的金凤凰和红烧豆腐就按客户说的减肥啊积分换卡惊世毒妃阿奥斯卡就发货撒地方阿基双方都发可接受...."
+    },
     dataList: [{
       activeName: "第17期",
       activeTheme: "钢铁是怎样练成的【正在报名中...】",
@@ -30,15 +35,26 @@ Page({
     }], //所有数据
   },
 
+/**
+ * 我要参加
+ */
   btnJoin(event) {
     console.log(event.currentTarget.dataset.id); 
     //查看详情
     wx.navigateTo({
       url: '../../pages/enrollList/enrollList?id=' + event.currentTarget.dataset.id
     })
-
-
-
+  },
+  /**
+  * 我要分享
+  */
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') { }
+    return {
+      title: '测试小程序',//分享内容
+      path: '/pages/index/index',//分享地址
+      imageUrl: '/images/img_share.png',//分享图片
+    }
   },
 
   /**

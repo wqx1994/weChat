@@ -7,6 +7,9 @@ Page({
   data: {
 
   },
+  /**
+   * 我要报名
+   */
   btnEnroll(event){
     console.log(event.currentTarget.dataset.id);
     //查看详情

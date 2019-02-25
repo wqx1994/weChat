@@ -86,9 +86,9 @@ Page({
     if (dataHelper.isExpiration()) {
       //如果过期则返回登录页面
       //跳转到登录页
-      wx.navigateTo({
-        url: '../../pages/login/login' // 页面 B
-      })
+      // wx.navigateTo({
+      //   url: '../../pages/login/login' // 页面 B
+      // })
     } else {
       that.setData({
         userId: wx.getStorageSync("userId"),

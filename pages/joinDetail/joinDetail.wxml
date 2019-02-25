@@ -1,7 +1,7 @@
 <view class='content'>
   <view class='content-c'>班级选择</view>
   <view class='content-c'>如果找不到您的班级，请先到个人中心维护您的班级和个人信息</view>
-  <view class='content-c'>
+  <view class='content-n'>
     <radio-group class="radio-group" bindchange="radioChange">
 
       <view class="radio radio-c" wx:for="{{items}}">

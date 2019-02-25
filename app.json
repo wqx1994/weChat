@@ -1,8 +1,7 @@
 {
   "pages": [
-     
     "pages/activeList/activeList",
-  "pages/studentEnroll/studentEnroll",
+    "pages/studentEnroll/studentEnroll",
     "pages/joinDetail/joinDetail",
     "pages/enrollList/enrollList",
     "pages/activeDetail/activeDetail",
@@ -13,13 +12,15 @@
     "pages/allClass/allClass",
     "pages/allTeacher/allTeacher",
     "pages/joinSuccess/joinSuccess",
+    "pages/myInfo/myInfo",
     "pages/index/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "#7A7E83",

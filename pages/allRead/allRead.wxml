@@ -1,6 +1,6 @@
 <view class="container">
   <view class='content'>
-    <scroll-view class='content-l'>
+    <scroll-view class='content-l' bindscrolltolower="btnLower">
       <block wx:for-items="{{dataList}}">
         <view class='con-i-items'>
           <view class='conetent-item' data-id="{{item.activeId}}" data-role="{{item.roleType}}" data-img="{{item.activeBanner}}" catchtap='detailClick'>

@@ -84,7 +84,7 @@
             <label class="info-title">手机：</label>
           </view>
           <view class="flex-item">
-            <input class="input" name="input_phone" type="number" focus  confirm-type="done" />
+            <input class="input" name="input_phone" type="text" focus  confirm-type="done" />
           </view>
         </view>
       </view>

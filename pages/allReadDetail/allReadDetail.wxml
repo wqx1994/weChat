@@ -8,18 +8,16 @@
         <image class='c-img-t' src="../../img/2.png"></image>
       </view>
       <view class='head-msg'>
-        <view>报名时间:2019.01.02 - 2019.02.09</view>
-        <view>适合班级</view>
-        <view>简介:开奖号水电费看见爱上奋达科技暗红色的发生的金凤凰和红烧豆腐就按客户说的减肥啊积分换卡惊世毒妃阿奥斯卡就发货撒地方阿基双方都发可接受....
-        </view>
-
+        <view>报名时间:{{activeDetail.enrollTime}}</view>
+        <view>适合班级:{{activeDetail.className}}</view>
+        <view>简介:{{activeDetail.introduce}}</view>
       </view>
     </view>
     <view class="btn-area">
       <button class='head-button' data-id="1" type="primary" size="mini" bindtap="myJoin" hover-class="other-button-hover">
         我要参加
       </button>
-      <button style='margin-left:2%;' class='head-button' type="default" size="mini" plain="false" disabled="false" bindtap="default" hover-class="other-button-hover">
+      <button style='margin-left:2%;' class='head-button' open-type="share" type="default" size="mini" bindtap="onShareAppMessage" hover-class="other-button-hover">
         我要分享
       </button>
     </view>
