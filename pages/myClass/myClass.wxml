@@ -1,0 +1,18 @@
+<view>
+  <view class='v-add'>
+    <view class="add-img">
+      <image class='add-img-1'  src="../../img/add.png"></image>
+    </view>
+    <view class='add-text'>添加班级</view>
+  </view>
+  <view class='content'>
+    <scroll-view class='content-l'>
+      <block wx:for-items="{{dataList}}">
+        <view class='con-i-items' catchtap='detailClick'>
+          <view class='classname-1'>{{item.calssName}} </view>
+          <view class='classcount-1'>{{item.classCount}}></view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

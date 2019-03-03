@@ -22,12 +22,12 @@
       <view class='content-i-v'>我的活动</view>
        <image class='content-i-link' src='../../img/update-s.png'></image>
     </view>
-     <view class='content-info' catchtap='classClick'>
+     <view class='content-info' catchtap='myClass'>
       <image class='content-i-img' src='../../img/class.png'></image>
       <view class='content-i-v'>我的班级</view>
       <image class='content-i-link' src='../../img/update-s.png'></image>
     </view>
-       <view class='content-info'  catchtap='insertClass'>
+       <view class='content-info'  catchtap='myFamily'>
       <image class='content-i-img' src='../../img/class.png'></image>
       <view class='content-i-v'>家庭成员</view>
       <image class='content-i-link' src='../../img/update-s.png'></image>

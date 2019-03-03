@@ -1,0 +1,6 @@
+<!--pages/myFamily/myFamily.wxml-->
+
+<view class='head'>
+<image class='head-img' src="../../img/2.png"></image>
+</view>
+

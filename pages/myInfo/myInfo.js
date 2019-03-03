@@ -3,6 +3,7 @@ var userServiceHelper = require('../../utils/userServiceHelper.js');
 var dataHelper = require('../../utils/dataHelper.js');
 import WxValidate from '../../utils/wx-validate/WxValidate';
 var jsonHelper = require('../../utils/jsonHelper.js');
+const app = getApp();
 Page({
   /**
    * 页面的初始数据
@@ -153,16 +154,17 @@ Page({
     dataHelper.showWran(page, error, delayTime, delayMillsecond);
   },
   formSubmit: function (e) {
-    const params = e.detail.value;
-    var that = this;
-    // 传入表单数据，调用验证方法
-    if (!that.WxValidate.checkForm(params)) {
-      const error = that.WxValidate.errorList[0]
-      that.showWarnInfo(error);
-      return false;
-    } else {
-      this.updateUserInfo(params);
-    }
+    
+    // const params = e.detail.value;
+    // var that = this;
+    // // 传入表单数据，调用验证方法
+    // if (!that.WxValidate.checkForm(params)) {
+    //   const error = that.WxValidate.errorList[0]
+    //   that.showWarnInfo(error);
+    //   return false;
+    // } else {
+    //   this.updateUserInfo(params);
+    // }
   },
   updateUserInfo: function (param) {
     var that = this;

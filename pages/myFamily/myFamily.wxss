@@ -1,0 +1,11 @@
+/* pages/myFamily/myFamily.wxss */
+
+.head {
+  width: 100%;
+  text-align: center;
+}
+
+.head-img {
+  width: 200px;
+  height: 200px;
+}

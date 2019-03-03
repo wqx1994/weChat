@@ -19,17 +19,17 @@ Page({
     isClassShow: false
   },
   //事件处理函数
-  bindViewTap: function () {
+  bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  exitLogin: function () {
+  exitLogin: function() {
     //弹出确认框
     wx.showModal({
       title: '提示',
       content: '是否确认退出?',
-      success: function (res) {
+      success: function(res) {
         if (res.confirm) {
           //退出登录
           wx.clearStorageSync("userId", "");
@@ -44,42 +44,43 @@ Page({
     })
 
   },
-  myActive: function () {
-    //我的活动列表
-    wx.switchTab({
-      url: '../../pages/myActiveList/myActiveList',// 页面 B
-      success: function () {
-        var page = getCurrentPages().pop();
-        if (page == undefined || page == null) return;
-        page.onLoad();
-      }
-    });
-  },
-  classClick: function () {
+  /**
+   * 我的活动
+   */
+  myActive: function() {    
     var that = this;
     wx.navigateTo({
-      url: '../../pages/class/class?userId=' + that.data.userId + "&usrRole=" + that.data.userRole// 页面 B
+      url: '../../pages/myActive/myActive?userId=' + that.data.userId
     })
   },
-  insertClass: function () {
+  /**
+   * 我的班级
+   */
+  myClass: function() {
     var that = this;
     wx.navigateTo({
-      url: '../../pages/insertClass/insertClass?classTeacher=' + that.data.userId // 页面 B
+      url: '../../pages/myClass/myClass?userId=' + that.data.userId
     })
   },
-  student: function () {
+  /**
+   *家庭成员
+   */
+  myFamily: function() {
     var that = this;
     wx.navigateTo({
-      url: '../../pages/student/student?userId=' + that.data.userId + "&usrRole=" + that.data.userRole // 页面 B
+      url: '../../pages/myFamily/myFamily?userId=' + that.data.userId
     })
   },
-  myInfo: function () {
+  /**
+   * 个人资料
+   */
+  myInfo: function() {
     var that = this;
     wx.navigateTo({
-      url: '../../pages/myInfo/myInfo?userId=' + that.data.userId// 页面 B
+      url: '../../pages/myInfo/myInfo?userId=' + that.data.userId
     })
   },
-  onLoad: function () {
+  onLoad: function() {
     //判断是否过期，过期则跳入登录页
     var that = this;
     //获取session的userId,判断是否过期，过期返回登录页面，
@@ -123,7 +124,7 @@ Page({
     }
 
   },
-  onShow: function () {
+  onShow: function() {
     var that = this;
     //获取session的userId,判断是否过期，过期返回登录页面，
     if (dataHelper.isExpiration()) {
@@ -139,7 +140,7 @@ Page({
       that.getUserInfoById();
     }
   },
-  getUserInfo: function (e) {
+  getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
@@ -147,7 +148,7 @@ Page({
       hasUserInfo: true
     })
   },
-  getUserInfoById: function () {
+  getUserInfoById: function() {
     var jsonParam = userServiceHelper.jsonParamCommon();
     var jsonstr = dataHelper.setJson(null, "userId", this.data.userId);
     jsonParam.jsonStr = jsonstr;
@@ -155,7 +156,7 @@ Page({
     //根据userID获取用户信息
     userServiceHelper.requestCommonPost("userInfo/getUserInfoById", jsonParam, this.callback_getUserInfoById);
   },
-  callback_getUserInfoById: function (dataW) {
+  callback_getUserInfoById: function(dataW) {
     var that = this;
     var data = dataW.data;
     //码表回调

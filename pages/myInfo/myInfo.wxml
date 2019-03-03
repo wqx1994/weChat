@@ -17,7 +17,7 @@
   </view>
 
     <view class='head'>
-      <view class='head-tips'>我的信息</view>
+      <!-- <view class='head-tips'>我的信息</view> -->
       <view class='head-info'>
         <view class='head-i-p-n'>微信号</view>
         <view class='head-i-p'>
