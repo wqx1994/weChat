@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+    "pages/stayAudit/stayAudit",
     "pages/activeList/activeList",
     "pages/studentEnroll/studentEnroll",
     "pages/joinDetail/joinDetail",
@@ -18,6 +18,8 @@
     "pages/myClass/myClass",
     "pages/classDetail/classDetail",
     "pages/myActive/myActive",
+
+   
     "pages/index/index"
   ],
   "window": {
