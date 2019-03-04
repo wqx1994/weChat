@@ -27,7 +27,7 @@ Page({
   detailClick(event){
     //查看详情
     wx.navigateTo({
-      url: '../../pages/classDetail/classDetail?id=' + event.currentTarget.dataset.id
+      url: '../../pages/stayAudit/stayAudit?id=' + event.currentTarget.dataset.id
     })
   },
 

@@ -1,39 +1,63 @@
 <view class="swiper-tab">
-  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">已审核成员</view>
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">学生列表</view>
   <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">待审核成员</view>
 </view>
-
-<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
-  <swiper-item>
-    <view > 
-      <view class='v-add'>
-        <view class="add-img">
-          <image class='add-img-1' src="../../img/add.png"></image>
-        </view>
-        <view class='add-text'>添加学生</view>
-      </view>
-      <!-- 外层包裹视图 -->
-      <view class="cont">
-        <!-- 列表 -->
-        <view wx:for="{{list}}" wx:key="index" class="list">
-          <!-- 滑动删除 -->
-          <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.shows}}" class="list_del txt">
-            <!-- 头像 -->
-            <image class="list_img" mode="widthFix" src="{{item.image}}"></image>
-            <!-- 昵称 -->
-            <text class='list_name'>{{item.name}}</text>
-            <!-- 列表标题 -->
-            <!-- <label class='list_title'>{{item.title}}</label> -->
-            <!-- 标签 -->
-            <text class='list_datas'>{{item.tag}}</text>
-          </view>
-          <!-- 删除 -->
-          <view data-index="{{index}}" class="list_del del">删除</view>
-        </view>
-      </view>
+<!--学生列表-->
+<view style='overflow-x: hidden;' wx:if="{{currentTab==0}}">
+  <view class='v-add'>
+    <view class="add-img">
+      <image class='add-img-1' src="../../img/add.png"></image>
     </view>
-  </swiper-item>
-  <swiper-item>
-    <view>提现中</view>
-  </swiper-item>
-</swiper>
+    <view class='add-text'>添加学生</view>
+  </view>
+  <!-- 外层包裹视图 -->
+  <view class="cont">
+    <!-- 列表 -->
+    <view wx:for="{{list}}" wx:key="index" class="list">
+      <!-- 滑动删除 -->
+      <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-type='1' data-index="{{index}}" style="{{item.shows}}" class="list_del txt">
+        <!-- 头像 -->
+        <image class="list_img" mode="widthFix" src="{{item.image}}"></image>
+        <!-- 昵称 -->
+        <text class='list_name'>{{item.name}}</text>
+        <!-- 列表标题 -->
+        <!-- <label class='list_title'>{{item.title}}</label> -->
+        <!-- 标签 -->
+        <text class='list_datas'>{{item.tag}}</text>
+      </view>
+      <!-- 删除 -->
+      <view data-index="{{index}}" bindtap='delItem' class="list_del del">删除</view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='view-button'>
+      <button class='button-1' data-id='1' type="primary" bindtap="btnJoin" hover-class="other-button-hover">
+        转移班级所有权给其他成员
+      </button>
+    </view>
+  </view>
+</view>
+
+
+<!--待审核页面-->
+<view style='overflow-x: hidden;' wx:if="{{currentTab==1}}">
+  <!-- 外层包裹视图 -->
+  <view class="cont">
+    <!-- 列表 -->
+    <view wx:for="{{uNAduitlist}}" wx:key="index" class="list">
+      <!-- 滑动审核 -->
+      <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-type='2' data-index="{{index}}" style="{{item.shows}}" class="list_audit txt">
+        <!-- 头像 -->
+        <image class="list_img" mode="widthFix" src="{{item.image}}"></image>
+        <!-- 昵称 -->
+        <text class='list_name'>{{item.name}}</text>
+        <!-- 列表标题 -->
+        <!-- <label class='list_title'>{{item.title}}</label> -->
+        <!-- 标签 -->
+        <text class='list_datas'>{{item.tag}}</text>
+      </view>
+      <!-- 审核 -->
+      <view data-index="{{index}}" bindtap="auditItem" class="list_audit audit">审核</view>
+    </view>
+  </view>
+</view>

@@ -1,28 +1,42 @@
 /* pages/detail/detail.wxss */
-.swiper-tab{
-    width: 100%;
-    border-bottom: 2rpx solid #ccc;
-    text-align: center;
-    height: 88rpx;
-    line-height: 88rpx;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+
+page {   
+  overflow-x: hidden !important;
+  height: 100% !important;
 }
-.swiper-tab-item{
-    width: 30%; 
-    color:#434343;
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
-.active{
-    color:#F65959;
-    border-bottom: 4rpx solid #F65959;
+
+.swiper-tab-item {
+  width: 50%;
+  color: #434343;
 }
-swiper{
+
+.active {
+  color: #f65959;
+  border-bottom: 4rpx solid #f65959;
+}
+
+swiper {
+  height: 100%;
   /* text-align: center; */
 }
 
-
 /**************wqx 2019-02-28 增加样式*********************/
+
+.tab-img {
+  width: 100%;
+  height: 100%;
+}
 
 .v-add {
   height: 80rpx;
@@ -45,7 +59,8 @@ swiper{
   width: 60rpx;
   height: 60rpx;
 }
-.dsh-1{
+
+.dsh-1 {
   height: 100rpx;
   background-color: white;
   width: 100%;
@@ -87,10 +102,38 @@ swiper{
   text-overflow: ellipsis;
 }
 
+.list_audit.txt {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  padding: 0 10rpx;
+  transition: left 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list_audit {
+  position: absolute;
+  top: 0;
+}
+
 /* 删除 */
 
 .list_del.del {
   background-color: #e64340;
+  width: 180rpx;
+  text-align: center;
+  z-index: 4;
+  right: 0;
+  color: #fff;
+}
+
+/*审核*/
+
+.list_audit.audit {
+  background-color: #0cf;
   width: 180rpx;
   text-align: center;
   z-index: 4;
@@ -115,8 +158,7 @@ swiper{
   position: absolute;
   left: 168rpx;
   bottom: 18rpx;
-  font-size:30rpx;
-
+  font-size: 30rpx;
 }
 
 /* 列表标题 */
@@ -139,3 +181,10 @@ swiper{
   color: #818181;
 }
 
+/*转移班级按钮*/
+
+.view-button {
+  width: 80%;
+  margin: auto;
+  margin-top: 100rpx;
+}
