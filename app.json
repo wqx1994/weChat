@@ -1,25 +1,25 @@
 {
   "pages": [
-
-    "pages/activeList/activeList",
-    "pages/studentEnroll/studentEnroll",
-    "pages/joinDetail/joinDetail",
-    "pages/enrollList/enrollList",
+    
+    "pages/activeList/activeList", 
+    "pages/studentEnroll/studentEnroll", 
+    "pages/joinDetail/joinDetail", 
+    "pages/enrollList/enrollList", 
     "pages/activeDetail/activeDetail",
-    "pages/allReadDetail/allReadDetail",
-    "pages/newList/newList",
-    "pages/userCenter/userCenter",
+    "pages/allReadDetail/allReadDetail", 
+    "pages/newList/newList", 
+    "pages/userCenter/userCenter", 
     "pages/allRead/allRead",
     "pages/allClass/allClass",
     "pages/allTeacher/allTeacher",
     "pages/joinSuccess/joinSuccess",
     "pages/myInfo/myInfo",
     "pages/myFamily/myFamily",
+    
     "pages/myClass/myClass",
     "pages/classDetail/classDetail",
     "pages/myActive/myActive",
-  "pages/stayAudit/stayAudit",
-   
+    "pages/stayAudit/stayAudit",
     "pages/index/index"
   ],
   "window": {

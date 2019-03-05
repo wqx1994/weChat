@@ -1,6 +1,12 @@
 <!--pages/myFamily/myFamily.wxml-->
-
+<view class='content'>
+<view class='head-t'>{{data.className}}</view>
 <view class='head'>
-<image class='head-img' src="../../img/2.png"></image>
+  <image class='head-img' bindtap="btnPreviewImg" data-src="{{data.erImg}}" src="{{data.erImg}}"></image>
 </view>
-
+<view class='view-button'>
+  <button class='head-button' type="primary" bindtap="onShareAppMessage" open-type="share" bindtap="onShareAppMessage" hover-class="other-button-hover">
+    我要分享
+  </button>
+</view>
+</view>

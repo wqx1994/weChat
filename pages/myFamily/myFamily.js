@@ -5,7 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
+    data:{
+      id:"1",
+      className:"北京市 海淀区 第四小学 一年级",
+      erImg:"../../img/2.png"
+    }
 
+  },
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') { }
+    return {
+      title: '测试小程序',//分享内容
+      path: '/pages/index/index',//分享地址
+      imageUrl: '/images/img_share.png',//分享图片
+    }
+  },
+  //图片点击事件
+  btnPreviewImg: function (event) {
+    var src = event.currentTarget.dataset.src;//当前显示图片的http链接 
+    var pictures=[];
+    pictures.push(src);// 需要预览的图片http链接列表    
+    //图片预览
+    wx.previewImage({
+      current: src, // 当前显示图片的http链接      
+      urls: pictures//// 需要预览的图片http链接列表
+    })
   },
 
   /**

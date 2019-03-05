@@ -1,11 +1,25 @@
 /* pages/myFamily/myFamily.wxss */
+.content{
+  line-height: 3;
+  margin-top: 20%;
+}
+.head-t{
+  text-align: center;
+}
 
 .head {
   width: 100%;
   text-align: center;
+  margin-top: 10rpx;
 }
 
 .head-img {
-  width: 200px;
-  height: 200px;
+  width: 300rpx;
+  height: 300rpx;
+}
+.view-button{
+  margin-top:10rpx;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
 }
